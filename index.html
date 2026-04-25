@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1550708199756317');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1550708199756317&ev=PageView&noscript=1"
+/></noscript>
+
+  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rotina TEA</title>
@@ -211,13 +229,21 @@ h1 {
 
     <div style="margin-top:30px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
       
-      <a href="https://pay.kiwify.com.br/GsGxvg6" class="cta">
-        🔥 QUERO ACESSAR AGORA
-      </a>
+    <a href="https://pay.kiwify.com.br/GsGxvg6" 
+       class="cta"
+       onclick="fbq('track', 'InitiateCheckout')">
+       🔥 QUERO ACESSAR AGORA
+    </a>
 
-      <a href="https://www.instagram.com/teaba.samantha/" target="_blank" class="cta-secondary">
-        Ver no Instagram
-      </a>
+    <a href="https://www.instagram.com/teaba.samantha/" 
+       target="_blank" 
+       class="cta-secondary"
+       onclick="fbq('track', 'Contact', {
+         content_name: 'Instagram CTA',
+         content_category: 'Engajamento'
+       });">
+       Ver no Instagram
+    </a>
 
     </div>
 
